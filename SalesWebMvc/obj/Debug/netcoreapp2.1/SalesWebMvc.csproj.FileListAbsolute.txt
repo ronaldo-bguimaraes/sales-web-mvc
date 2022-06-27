@@ -38,3 +38,5 @@ C:\Users\Ronaldo\source\repos\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Ra
 C:\Users\Ronaldo\source\repos\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Details.cshtml.g.cs
 C:\Users\Ronaldo\source\repos\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.cshtml.g.cs
 C:\Users\Ronaldo\source\repos\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.cshtml.g.cs
+C:\Users\Ronaldo\source\repos\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.AssemblyReference.cache
+C:\Users\Ronaldo\source\repos\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Index.cshtml.g.cs
