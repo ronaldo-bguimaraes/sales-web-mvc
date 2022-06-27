@@ -1,22 +1,20 @@
 ﻿using SalesWebMvc.Models;
 using SalesWebMvc.Models.Enums;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SalesWebMvc.Data
 {
   public class SeedingService
   {
-    private SalesWebMvcContext _ctx;
+    private readonly SalesWebMvcContext _context;
     public SeedingService(SalesWebMvcContext context)
     {
-      _ctx = context;
+      _context = context;
     }
     public void Seed()
     {
-      if (_ctx.Department.Any() || _ctx.Seller.Any() || _ctx.SalesRecord.Any())
+      if (_context.Department.Any() || _context.Seller.Any() || _context.SalesRecord.Any())
       {
         return; // the database is not empty
       }
@@ -64,13 +62,13 @@ namespace SalesWebMvc.Data
       SalesRecord r29 = new SalesRecord(29, new DateTime(2018, 10, 23), 12000.0, SaleStatus.Billed, s5);
       SalesRecord r30 = new SalesRecord(30, new DateTime(2018, 10, 12), 5000.0, SaleStatus.Billed, s2);
 
-      _ctx.Department.AddRange(d1, d2, d3, d4);
+      _context.Department.AddRange(d1, d2, d3, d4);
 
-      _ctx.Seller.AddRange(s1, s2, s3, s4, s5, s6);
+      _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
 
-      _ctx.SalesRecord.AddRange(r01, r02, r03, r04, r05, r06, r07, r08, r09, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r28, r29, r30);
+      _context.SalesRecord.AddRange(r01, r02, r03, r04, r05, r06, r07, r08, r09, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r28, r29, r30);
 
-      _ctx.SaveChanges();
+      _context.SaveChanges();
     }
   }
 }
