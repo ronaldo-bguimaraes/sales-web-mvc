@@ -7,14 +7,14 @@ namespace SalesWebMvc.Services
 {
   public class DepartmentService
   {
-    private readonly SalesWebMvcContext _ctx;
+    private readonly SalesWebMvcContext _context;
     public DepartmentService(SalesWebMvcContext context)
     {
-      _ctx = context;
+      _context = context;
     }
     public List<Department> FindAll()
     {
-      return _ctx.Department.OrderBy(d => d.Name).ToList();
+      return _context.Department.OrderBy(d => d.Name).ToList();
     }
   }
 }
